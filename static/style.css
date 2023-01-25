@@ -1,0 +1,30 @@
+body{
+    background-color:LightSalmon;
+
+}
+.container{
+    position:relative;
+    text-align:center;
+}
+
+.top-left{
+    position:absolute;
+    top:10%;
+    left:25%;
+}
+.nav{
+    display:inline-block;
+    text-align:center;
+}
+.nav-item {
+    letter-spacing : .2em;
+    font-size : 14px;
+    text-transform : uppercase;
+
+}
+.dropdown{
+    letter-spacing : .2em;
+    font-size : 14px;
+    text-transform : uppercase;
+    text-align:right;
+ }

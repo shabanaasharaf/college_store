@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registration form</title>
+</head>
+<body  style="background-color:LightCoral;">
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+<h2 ALIGN="CENTER" style="color:RebeccaPurple;">Registration form</h2>
+<table border="0" align="center">
+<tbody style="color:Indigo;">
+
+
+
+<tr>
+<td><label for="username">Username: </label></td>
+<td><input id="username" maxlength="50" name="username" type="text" /></td>
+</tr>
+
+<!--<tr>-->
+<!--<td><label for="first_name">First_name: </label></td>-->
+<!--<td><input id="first_name" maxlength="50" name="first_name" type="text" /></td>-->
+<!--</tr>-->
+
+<!--<tr>-->
+<!--<td><label for="last_name">Last_name: </label></td>-->
+<!--<td><input id="last_name" maxlength="50" name="last_name" type="text" /></td>-->
+<!--</tr>-->
+
+<!--<tr>
+<td><label for="email">Email_Address: </label></td>
+<td><input id="email" maxlength="50" name="email" type="email" /></td>
+</tr>-->
+
+<tr>
+<td><label for="password">Password:</label></td>
+<td><input id="password" maxlength="50" name="password" type="password" /></td>
+</tr>
+
+<tr>
+<td><label for="cpassword">Confirm password:</label></td>
+<td><input id="cpassword" maxlength="50" name="cpassword" type="password" /></td>
+</tr>
+
+<tr>
+<td align="right"><input name="Submit" type="Submit" value="Register" /></td>
+</tr>
+
+</tbody>
+</table>
+    </form>
+
+
+
+
+{% for msg in messages %}
+{{msg}}
+<h3>{% endfor %}</h3>
+</body>
+</html>
